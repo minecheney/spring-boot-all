@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-mybatis" />
         <module name="spring-boot-data" />
+        <module name="spring-boot-filter" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-boot-filter" options="-parameters" />
       <module name="spring-boot-mybatis" options="-parameters" />
     </option>
   </component>
