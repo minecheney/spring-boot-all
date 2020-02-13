@@ -12,6 +12,7 @@
         <module>spring-boot-data</module>
         <module>spring-boot-mybatis</module>
         <module>spring-boot-filter</module>
+        <module>spring-boot-redis</module>
     </modules>
 
     <properties>
@@ -20,7 +21,7 @@
         <java.version>1.8</java.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <spring.boot.version>2.1.0.RELEASE</spring.boot.version>
+        <spring.boot.version>2.2.0.RELEASE</spring.boot.version>
         <mysql.version>8.0.12</mysql.version>
         <hutool.version>5.0.0</hutool.version>
         <guava.version>28.1-jre</guava.version>

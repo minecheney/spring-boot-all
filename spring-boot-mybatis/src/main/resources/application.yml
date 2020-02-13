@@ -5,13 +5,13 @@ server:
 mybatis:
   mapper-locations: classpath:mappers/*.xml
   configuration:
-    #    # sqlÈÕÖ¾ÊµÏÖ
+    #    # sqlæ—¥å¿—å®ç°
     #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-    # Ê¹ÓÃjdbcµÄgetGeneratedKeys ¿ÉÒÔ»ñÈ¡Êı¾İ¿â×ÔÔöÖ÷¼üÖµ
+    # ä½¿ç”¨jdbcçš„getGeneratedKeys å¯ä»¥è·å–æ•°æ®åº“è‡ªå¢ä¸»é”®å€¼
     use-generated-keys: true
-    # ¿ªÆôÍÕ·åÃüÃû×ª»»£¬Èç£ºTable(create_time) -> Entity(createTime)¡£²»ĞèÒªÎÒÃÇ¹ØĞÄÔõÃ´½øĞĞ×Ö¶ÎÆ¥Åä£¬mybatis»á×Ô¶¯Ê¶±ğ`´óĞ´×ÖÄ¸ÓëÏÂ»®Ïß`
+    # å¼€å¯é©¼å³°å‘½åè½¬æ¢ï¼Œå¦‚ï¼šTable(create_time) -> Entity(createTime)ã€‚ä¸éœ€è¦æˆ‘ä»¬å…³å¿ƒæ€ä¹ˆè¿›è¡Œå­—æ®µåŒ¹é…ï¼Œmybatisä¼šè‡ªåŠ¨è¯†åˆ«`å¤§å†™å­—æ¯ä¸ä¸‹åˆ’çº¿`
     map-underscore-to-camel-case: true
-  # xmlÖĞresultTypeÊµÌåÊ¡ÂÔ°üÃûÖ±½ÓĞ´¶ÔÏóµÄ×÷ÓÃ
+  # xmlä¸­resultTypeå®ä½“çœç•¥åŒ…åç›´æ¥å†™å¯¹è±¡çš„ä½œç”¨
   type-aliases-package: com.example.demo.entity
 
 spring:
@@ -23,10 +23,10 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
     initialization-mode: always
     continue-on-error: true
-#    schema:
-#      - "classpath:db/schema.sql"
-#    data:
-#      - "classpath:db/data.sql"
+    #    schema:
+    #      - "classpath:db/schema.sql"
+    #    data:
+    #      - "classpath:db/data.sql"
     hikari:
       minimum-idle: 5
       connection-test-query: SELECT 1 FROM DUAL
@@ -36,7 +36,7 @@ spring:
       pool-name: SpringBootDemoHikariCP
       max-lifetime: 60000
       connection-timeout: 30000
-# sqlÈÕÖ¾´òÓ¡
+# sqlæ—¥å¿—æ‰“å°
 logging:
   level:
-    com.mine.data.dao: trace # daoËùÔÚ°ü
+    com.mine.data.dao: trace # daoæ‰€åœ¨åŒ…

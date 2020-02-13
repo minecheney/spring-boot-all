@@ -1,0 +1,5 @@
+com\mine\data\common\IErrorCode.class
+com\mine\data\common\CommonResult.class
+com\mine\data\dao\UserDao.class
+com\mine\data\common\ResultCode.class
+com\mine\data\po\User.class

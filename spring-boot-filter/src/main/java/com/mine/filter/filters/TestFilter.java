@@ -3,6 +3,7 @@ package com.mine.filter.filters;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.*;
+import javax.servlet.FilterConfig;
 import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
 

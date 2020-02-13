@@ -1,0 +1,3 @@
+com\mine\redis\controller\RedisTestController.class
+com\mine\redis\SpringBootRedisApplication.class
+com\mine\redis\config\RedisConfig.class

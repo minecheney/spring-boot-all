@@ -1,0 +1,6 @@
+com\mine\filter\FilterApplication.class
+com\mine\filter\filters\FilterConfig.class
+com\mine\filter\filters\TestFilter.class
+com\mine\filter\controller\TestController.class
+com\mine\filter\interceptor\TestInterceptor.class
+com\mine\filter\config\WebConfig.class
