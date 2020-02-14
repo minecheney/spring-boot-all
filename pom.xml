@@ -13,6 +13,7 @@
         <module>spring-boot-mybatis</module>
         <module>spring-boot-filter</module>
         <module>spring-boot-redis</module>
+        <module>spring-boot-jpa</module>
     </modules>
 
     <properties>
