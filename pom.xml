@@ -14,6 +14,7 @@
         <module>spring-boot-filter</module>
         <module>spring-boot-redis</module>
         <module>spring-boot-jpa</module>
+        <module>spring-boot-websocket</module>
     </modules>
 
     <properties>

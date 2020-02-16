@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebSocket</title>
+</head>
+<body>
+<div id="app">
+    <div>当前时间: {{span}}</div>
+</div>
+</body>
+<script src="js/sockjs.min.js"></script>
+<script src="js/stomp.js"></script>
+<script src="https://cdn.bootcss.com/vue/2.5.21/vue.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/element-ui/2.4.11/index.js"></script>
+<script src="https://cdn.bootcss.com/axios/0.19.0-beta.1/axios.min.js"></script>
+<script>
+
+    const wsHost = "http://localhost:8080/demo/notification";
+    const wsTopic = "/topic/server";
+
+    const app = new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                isConnected: false,
+                stompClient: {},
+                socket: {},
+                span: 1
+            }
+        },
+        methods: {
+            _initSockJs() {
+                this.socket = new SockJS(wsHost);
+                this.stompClient = Stomp.over(this.socket);
+
+                this.stompClient.connect({}, (frame) => {
+                    console.log('websocket连接成功:' + frame);
+                this.isConnected = true;
+                this.$message('websocket服务器连接成功');
+
+                    // 另外再注册一下消息推送
+                    this.stompClient.subscribe(wsTopic, (response) => {
+                        this.span = response.body;
+                    });
+            });
+            },
+            _destroySockJs() {
+                if (this.stompClient != null) {
+                    this.stompClient.disconnect();
+                    this.socket.onclose;
+                    this.socket.close();
+                    this.stompClient = {};
+                    this.socket = {};
+                    this.isConnected = false;
+                }
+                console.log('websocket断开成功！');
+                this.$message.error('websocket断开成功！');
+            }
+        },
+        mounted() {
+            this._initSockJs();
+        },
+        beforeDestroy() {
+            this._destroySockJs();
+        }
+
+    })
+
+    this._initSockJs();
+</script>
+</html>
