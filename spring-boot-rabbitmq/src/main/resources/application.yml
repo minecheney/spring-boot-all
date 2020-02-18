@@ -1,0 +1,5 @@
+spring:
+  rabbitmq:
+    host: 47.114.133.218
+    username: guest
+    password: guest
