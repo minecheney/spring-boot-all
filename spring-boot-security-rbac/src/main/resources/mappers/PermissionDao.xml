@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mine.security.rbac.dao.PermissionDao">
+    <select id="selectByRoleIdList" resultType="com.mine.security.rbac.po.Permission">
+        SELECT DISTINCT
+            sec_permission.*
+        FROM
+            sec_permission,
+            sec_role,
+            sec_role_permission
+        WHERE
+            sec_role.id = sec_role_permission.role_id
+            AND sec_permission.id = sec_role_permission.permission_id
+            AND sec_role.id IN
+            <foreach collection="roleIds" item="roleId" index="index" open="(" close=")" separator=",">
+                #{roleId}
+            </foreach>
+    </select>
+
+</mapper>

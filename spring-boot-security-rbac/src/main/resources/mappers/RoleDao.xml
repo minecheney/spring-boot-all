@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mine.security.rbac.dao.RoleDao">
+    <select id="selectByUserId" resultType="com.mine.security.rbac.po.Role">
+        SELECT
+            sec_role.*
+        FROM
+            sec_role,
+            sec_user,
+            sec_user_role
+        WHERE
+            sec_user.id = sec_user_role.user_id
+            AND sec_role.id = sec_user_role.role_id
+            AND sec_user.id = #{id}
+    </select>
+</mapper>
