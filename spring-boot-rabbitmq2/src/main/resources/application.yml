@@ -1,0 +1,20 @@
+spring:
+
+  rabbitmq:
+    host: 47.114.133.218
+    port: 5862
+    username: guest
+    password: guest
+    ###开启消息确认机制 confirms
+    virtual-host: /
+    publisher-returns: true
+    publisher-confirm-type: simple
+    template:
+      mandatory: true
+    #采用手动应答 (消费成功后需要手工签收 ack)
+    listener:
+      simple:
+        acknowledge-mode: manual
+
+server:
+  port: 10002

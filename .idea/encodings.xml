@@ -3,15 +3,33 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-data" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-data/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-data/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-filter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-filter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-filter/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-jpa" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-jpa/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-jpa/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-mybatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-mybatis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-mybatis/src/main/resources/application.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-rabbitmq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-rabbitmq/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-rabbitmq/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-rabbitmq2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-rabbitmq2/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-redis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-redis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-security-rbac" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-security-rbac/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-security-rbac/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-security-rbac/src/main/resources/application.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-websocket" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-websocket/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-websocket/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

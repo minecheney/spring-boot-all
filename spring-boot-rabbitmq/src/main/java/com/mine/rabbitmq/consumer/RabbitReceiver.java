@@ -11,12 +11,18 @@ import org.springframework.stereotype.Component;
  * @Date: 2020/2/18 21:34
  */
 @Component
-@RabbitListener(queues = Constant.MQ_QUEUE)
 @Slf4j
 public class RabbitReceiver {
 
     @RabbitHandler
+    @RabbitListener(queues = Constant.MQ_QUEUE)
     public void handler(String message) {
         log.info("发放实物队列收到的消息：{}", message);
+    }
+
+    @RabbitHandler
+    @RabbitListener(queues = Constant.MQ_DELAY_QUEUE)
+    public void handlerDelay(String message) {
+        log.info("发放延迟队列收到的消息：{}", message);
     }
 }
