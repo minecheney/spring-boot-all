@@ -3,10 +3,10 @@ spring:
 #    host: 47.114.133.218
 #    username: guest
 #    password: guest
-    host: 47.96.101.173
-    port: 5862
-    username: guest
-    password: guest
+    host: 47.119.148.240
+    port: 5672
+    username: admin
+    password: 123456++abc
 
 
 server:

@@ -1,7 +1,7 @@
 spring:
 
   rabbitmq:
-    host: 47.114.133.218
+    host: 47.96.101.173
     port: 5862
     username: guest
     password: guest
@@ -10,7 +10,7 @@ spring:
     publisher-returns: true
     publisher-confirm-type: simple
     template:
-      mandatory: true
+      mandatory: true #保证监听有效
     #采用手动应答 (消费成功后需要手工签收 ack)
     listener:
       simple:

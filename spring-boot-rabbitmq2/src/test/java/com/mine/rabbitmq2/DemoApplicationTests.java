@@ -1,5 +1,6 @@
 package com.mine.rabbitmq2;
 
+import com.mine.rabbitmq2.config.MQSender;
 import com.mine.rabbitmq2.producer.RabbitSender;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,4 +21,14 @@ class DemoApplicationTests {
             rabbitSender.send("Hello", map);
     }
 
+
+    @Autowired
+    private MQSender mqSender;
+
+    @Test
+    public void sendLazy() throws  Exception {
+        String msg = "hello spring boot";
+
+        mqSender.sendLazy(msg + ":");
+    }
 }

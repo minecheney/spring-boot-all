@@ -17,6 +17,8 @@
         <module>spring-boot-websocket</module>
         <module>spring-boot-security-rbac</module>
         <module>spring-boot-rabbitmq</module>
+        <module>spring-boot-security-jwt</module>
+        <module>spring-boot-mybatisPlus</module>
     </modules>
 
     <properties>
@@ -67,6 +69,11 @@
         </dependencies>
     </dependencyManagement>
     <dependencies>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.50</version>
+        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

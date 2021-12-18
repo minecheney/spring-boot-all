@@ -1,0 +1,9 @@
+server:
+  port: 8081
+
+
+spring:
+  redis:
+    host: 47.96.101.173
+    port: 7639
+    password: v9ms6Qhg5MvMiolF

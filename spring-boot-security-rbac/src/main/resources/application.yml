@@ -15,10 +15,10 @@ mybatis:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/spring-boot-all?useUnicode=yes&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+    url: jdbc:mysql://42.193.142.126:3306/spring-boot-all?useUnicode=yes&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: 123456
+    password: 202093abc
     type: com.zaxxer.hikari.HikariDataSource
     initialization-mode: always
     continue-on-error: true
@@ -37,9 +37,9 @@ spring:
       connection-timeout: 30000
 
   redis:
-    host: 47.114.133.218
-    port: 6379
-    password: cm970903
+    host: 47.96.101.173
+    port: 7639
+    password: v9ms6Qhg5MvMiolF
     # 连接超时时间（记得添加单位，Duration）
     timeout: 10000ms
     # Redis默认情况下有16个分片，这里配置具体使用的分片
